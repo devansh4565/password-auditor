@@ -44,7 +44,15 @@ cd frontend && node scripts/parity.mts           # TS features must match Python
 # Deploy
 cd frontend && npm run build && cd .. && firebase deploy --only hosting:bombe-pw-auditor --project stockpilot-9sqqn
 git push   # Render auto-deploys backend from main
+
+# Lecturer report (.docx) and slides (.pptx) — sources in report/, screenshots in report/assets/screens
+cd report && npm install
+node build_report.cjs                                   # -> Project_CSN446_ODD_2026_<ERP IDs>.docx
+NODE_PATH="$(pwd)/node_modules" node build_slides.cjs <pptx-skill>/scripts/apply_theme.js   # -> Project_CSN446_Presentation.pptx
 ```
+
+The DIT logo (`report/assets/dit-logo.svg`) is the university's official white artwork from dituniversity.edu.in; it is
+only legible on dark backgrounds, so it is used on dark bands and dark slides, never recoloured.
 
 ## Invariants (do not break)
 
