@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+.env.local
+__pycache__/
+*.pyc
+.venv/
+.firebase/
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/config.local.json
+.claude/settings.local.json
+ml/eff_large_wordlist.txt
+*.log

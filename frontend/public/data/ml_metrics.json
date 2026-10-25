@@ -1,0 +1,253 @@
+{
+ "trained_at": "2026-10-26",
+ "samples": {
+  "total": 60000,
+  "train": 48000,
+  "test": 12000,
+  "per_class": 20000
+ },
+ "model": {
+  "type": "RandomForest",
+  "trees": 40,
+  "max_depth": 12,
+  "min_samples_leaf": 8
+ },
+ "accuracy": 0.9984,
+ "confusion": [
+  [
+   3996,
+   4,
+   0
+  ],
+  [
+   15,
+   3985,
+   0
+  ],
+  [
+   0,
+   0,
+   4000
+  ]
+ ],
+ "report": {
+  "weak": {
+   "precision": 0.9962602842183994,
+   "recall": 0.999,
+   "f1-score": 0.9976282611409312,
+   "support": 4000.0
+  },
+  "medium": {
+   "precision": 0.9989972424166458,
+   "recall": 0.99625,
+   "f1-score": 0.997621729878583,
+   "support": 4000.0
+  },
+  "strong": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1-score": 1.0,
+   "support": 4000.0
+  },
+  "accuracy": 0.9984166666666666,
+  "macro avg": {
+   "precision": 0.9984191755450151,
+   "recall": 0.9984166666666666,
+   "f1-score": 0.9984166636731714,
+   "support": 12000.0
+  },
+  "weighted avg": {
+   "precision": 0.998419175545015,
+   "recall": 0.9984166666666666,
+   "f1-score": 0.9984166636731714,
+   "support": 12000.0
+  }
+ },
+ "importance": [
+  {
+   "feature": "pool_entropy",
+   "value": 0.2098
+  },
+  {
+   "feature": "n_symbol",
+   "value": 0.1601
+  },
+  {
+   "feature": "dict_cover",
+   "value": 0.1565
+  },
+  {
+   "feature": "length",
+   "value": 0.1427
+  },
+  {
+   "feature": "n_lower",
+   "value": 0.1085
+  },
+  {
+   "feature": "n_upper",
+   "value": 0.051
+  },
+  {
+   "feature": "n_digit",
+   "value": 0.0493
+  },
+  {
+   "feature": "digit_suffix",
+   "value": 0.0329
+  },
+  {
+   "feature": "n_classes",
+   "value": 0.0295
+  },
+  {
+   "feature": "markov_avg",
+   "value": 0.0188
+  },
+  {
+   "feature": "unique_ratio",
+   "value": 0.0136
+  },
+  {
+   "feature": "has_year",
+   "value": 0.0104
+  },
+  {
+   "feature": "upper_first_only",
+   "value": 0.0074
+  },
+  {
+   "feature": "seq_run",
+   "value": 0.0044
+  },
+  {
+   "feature": "leet_count",
+   "value": 0.0029
+  },
+  {
+   "feature": "kb_run",
+   "value": 0.0017
+  },
+  {
+   "feature": "max_repeat",
+   "value": 0.0005
+  }
+ ],
+ "zxcvbn_compare": {
+  "sample": 1500,
+  "zxcvbn_accuracy": 0.7813,
+  "model_accuracy": 0.9993
+ },
+ "disagreements": [
+  {
+   "password": "Welc0me11234",
+   "truth": "weak",
+   "model": "weak",
+   "zxcvbn": "medium",
+   "zxcvbn_score": 2
+  },
+  {
+   "password": "baggage_utmost7484%",
+   "truth": "medium",
+   "model": "medium",
+   "zxcvbn": "strong",
+   "zxcvbn_score": 4
+  },
+  {
+   "password": "heart#007",
+   "truth": "weak",
+   "model": "weak",
+   "zxcvbn": "medium",
+   "zxcvbn_score": 2
+  },
+  {
+   "password": "earthlingFreefall5978$",
+   "truth": "medium",
+   "model": "medium",
+   "zxcvbn": "strong",
+   "zxcvbn_score": 4
+  },
+  {
+   "password": "cricke72026",
+   "truth": "weak",
+   "model": "weak",
+   "zxcvbn": "medium",
+   "zxcvbn_score": 2
+  },
+  {
+   "password": "facebookpassw",
+   "truth": "weak",
+   "model": "weak",
+   "zxcvbn": "medium",
+   "zxcvbn_score": 3
+  },
+  {
+   "password": "richcand",
+   "truth": "weak",
+   "model": "weak",
+   "zxcvbn": "medium",
+   "zxcvbn_score": 2
+  },
+  {
+   "password": "DegreaseI%TlC",
+   "truth": "medium",
+   "model": "medium",
+   "zxcvbn": "strong",
+   "zxcvbn_score": 4
+  },
+  {
+   "password": "opjknkv",
+   "truth": "weak",
+   "model": "weak",
+   "zxcvbn": "medium",
+   "zxcvbn_score": 2
+  },
+  {
+   "password": "pzzwdop",
+   "truth": "weak",
+   "model": "weak",
+   "zxcvbn": "medium",
+   "zxcvbn_score": 2
+  },
+  {
+   "password": "handwrite_various5977#",
+   "truth": "medium",
+   "model": "medium",
+   "zxcvbn": "strong",
+   "zxcvbn_score": 4
+  },
+  {
+   "password": "Handgun_Phrasing446&",
+   "truth": "medium",
+   "model": "medium",
+   "zxcvbn": "strong",
+   "zxcvbn_score": 4
+  }
+ ],
+ "examples": {
+  "weak": [
+   "Pilot@1",
+   "silver2012",
+   "internet2024",
+   "Om1981",
+   "03091998",
+   "babyra"
+  ],
+  "medium": [
+   "prologue.atom2737!",
+   "author.Quintuple5601$",
+   "Companion.bucked7121#",
+   "keenly$,TM$",
+   "SpR >!9G",
+   "r37r14l@2493"
+  ],
+  "strong": [
+   "Ammonia.Skipping.Desolate.Jot.Fondly",
+   "gerbilfinalistbalancingmaydayreawake",
+   "rsgvjtlkwoylhtfhysecpgiqq",
+   "Lather Fidgeting Curly Undertake Uncle82",
+   "gtgubayeunduoqouohxgwusv",
+   "LyricsReformatWhackyApricot"
+  ]
+ }
+}

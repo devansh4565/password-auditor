@@ -1,0 +1,31 @@
+{
+ "coverage_estimate": 0.793,
+ "coverage_trials": 150,
+ "examples": [
+  "sneak",
+  "stand",
+  "gusto",
+  "opium",
+  "probe",
+  "mushy",
+  "pond",
+  "bagel",
+  "apron",
+  "judge",
+  "blush",
+  "blade",
+  "saved",
+  "vegan",
+  "blast",
+  "rumor",
+  "silly",
+  "saggy",
+  "june",
+  "awry",
+  "tweed",
+  "coil",
+  "nape",
+  "black"
+ ],
+ "build_seconds": 192
+}
